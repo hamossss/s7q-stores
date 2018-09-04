@@ -44,12 +44,12 @@ if(message.author.bot) return;
     channel: "welcome"
 }
 const channel = sWlc[message.guild.id].channel
-  if (message.content.startsWith(prefix + "wel")) {
+  if (message.content.startsWith(prefix + "s7q")) {
     if(!message.member.hasPermission(`MANAGE_GUILD`)) return;
     let newChannel = message.content.split(' ').slice(1).join(" ")
-    if(!newChannel) return message.reply(`**${prefix}setwelcomer <channel name>**`)
+    if(!newChannel) return message.reply(`**${prefix}S7Q <اكتب اسم الروم ال تبي>**`)
     sWlc[message.guild.id].channel = newChannel
-    message.channel.send(`**${message.guild.name}'s channel has been changed to ${newChannel}**`);
+    message.channel.send(`**${message.guild.name}'s تم عمل الترحيب بي الروم  ${newChannel}**`);
   }
 });
  
