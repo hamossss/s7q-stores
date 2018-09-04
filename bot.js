@@ -299,7 +299,9 @@ client.on('message', async message => {
 })
 
 
+
 client.on('message', message => {
+var prefix = "ب";
   if (message.author.codes) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -308,7 +310,7 @@ client.on('message', message => {
 
 var args = message.content.split(" ").slice(1);
 
-  if (command == "بند") {
+  if (command == "ند") {
                if(!message.channel.guild) return message.reply('** هذا الأمر لسيرفرات فقط **');
          
   if(!message.guild.member(message.author).hasPermission("BAN_MEMBERS")) return message.reply("**انت لا تملك الصلاحيات المطلوبه**");
