@@ -402,6 +402,10 @@ client.channels.find('id', '486326532520935445').setName("Welcome To S7Q STORE")
   }, 3000);
 });
 
+client.on('ready', () => {
+     client.user.setActivity("S7Q STORE",{type: 'WATCHING'});
+
+});
 
 
 //MHSTR END NOW THIS IS END
