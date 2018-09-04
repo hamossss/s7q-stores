@@ -432,5 +432,18 @@ var prefix = "م";
 }
 });
 
+
+client.on('message', message => {
+var prefix = "ط";
+if (message.content.startsWith("رد")) {
+    var mention = message.mentions.members.first();
+    if(!mention) return message.channel.send("يجب منشن العضو");
+
+    mention.kick("By: " + message.author.tag);
+    
+    message.channel.send("تم أعطاء كيك الى : " + mention.tag);
+};
+});
+
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
