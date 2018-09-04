@@ -407,6 +407,13 @@ client.on('ready', () => {
 
 });
 
+client.on("guildMemberAdd", (member) => {
+client.channels.get('486325753076776962').edit({name : `أعضاء السيرفر : ${member.guild.memberCount}`});
+})
+client.on("guildMemberRemove", (member) => {
+client.channels.get('486325753076776962').edit({name : `أعضاء السيرفر : ${member.guild.memberCount} `});
+})
+
 
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
