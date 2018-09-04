@@ -156,6 +156,31 @@ client.on("message", message => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'برب') {
+    msg.reply('**ٺــٻۧــټ ۖ ڀــٰ̍ا̍ ۛ ּحۡــڷــﯡۥ ۛ ּلآتـطــۄڸ ۗ::disappointed::broken_heart:**');
+  }
+});
+
+
+
+
+
+
+
+
+client.on('message', msg => {
+  if (msg.content === 'باك') {
+    msg.reply('** ۗ وّلّلّّكّكّممّّ نۨــۏڕٺ ۛ ּيۧ مۭــڗ ۛ ּ، ۛ ּمۭــنۨ ۖ ڙمۭــٰا̍نۨ ̨؏ــڼۨــک ۗ :rose::wave:**');
+  }
+});
+
+
+client.on('message', msg => {
+  if (msg.content === '.') {
+    msg.reply('***أطلق اثبات وجود :hearts: ***');
+  }
+});
 
 
 //MHSTR END NOW THIS IS END
