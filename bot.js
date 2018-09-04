@@ -383,5 +383,26 @@ client.on("voiceStateUpdate", (o,n) => {
     };
 });
 
+client.on("ready", async  => {
+setInterval(function(){
+client.channels.find('id', '486326532520935445').setName("W");
+client.channels.find('id', '486326532520935445').setName("We");
+client.channels.find('id', '486326532520935445').setName("Wel");
+client.channels.find('id', '486326532520935445').setName("Welc");
+client.channels.find('id', '486326532520935445').setName("Welco");
+client.channels.find('id', '486326532520935445').setName("Welcom");
+client.channels.find('id', '486326532520935445').setName("Welcome");
+client.channels.find('id', '486326532520935445').setName("Welcome T");
+client.channels.find('id', '486326532520935445').setName("Welcome To");
+client.channels.find('id', '486326532520935445').setName("Welcome To S");
+client.channels.find('id', '486326532520935445').setName("Welcome To S7");
+client.channels.find('id', '486326532520935445').setName("Welcome To S7Q STO");
+client.channels.find('id', '486326532520935445').setName("Welcome To S7Q STOR");
+client.channels.find('id', '486326532520935445').setName("Welcome To S7Q STORE");
+  }, 3000);
+});
+
+
+
 //MHSTR END NOW THIS IS END
 client.login(process.env.BOT_TOKEN);
